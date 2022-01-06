@@ -1,2 +1,3 @@
 # Code-snippets
-All Code snippets 
+Important Code Snippets that are useful frequently in coding 
+
