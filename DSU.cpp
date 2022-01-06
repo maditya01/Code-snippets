@@ -1,4 +1,5 @@
- void make(int v){
+//Take Care Which Variable,data structure i am using  
+void make(int v){
      parent[v]=v;
      sz[v]=1;
  }   
