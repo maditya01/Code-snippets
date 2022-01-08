@@ -6,7 +6,9 @@ void shortestPath(int source){
      ms.insert({0,source});
      while(!ms.empty()){
          int u=ms.begin()->second;
+          int d=ms.begin()->first;
          ms.erase(ms.begin());
+          if(d>dis[u]) continue;
          for(auto v:edges[u]){
              if(dis[v.first]> dis[u]+v.second){
                  dis[v.first]=dis[u]+v.second;
