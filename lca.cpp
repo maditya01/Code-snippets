@@ -1,4 +1,6 @@
 //Take all The Variables according to that
+//DFS is Useful For Calculation of  Depth of each vertex
+//Precomputation of up table.
 void dfs(int u, int p = -1) {
 	par[u] = p;
 	for (int v : adj[u]) {
