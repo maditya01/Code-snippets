@@ -1,4 +1,6 @@
-//Variables have their usual Meaning 
+//Variables have their usual Meaning
+//Edges is a vector of vector
+//dis,par is a V size vector
 void bellmanFord(int source) {
 	int x;
 	for (int i = 0; i < V; i++) {
