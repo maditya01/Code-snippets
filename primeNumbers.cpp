@@ -10,6 +10,7 @@ void seive() {
   isPrime[0] = isPrime[1] = 0;
   for (int i = 2; i < N; i++) {
     if (isPrime[i]) {
+      lp[i]=hp[i]=i;
       for (int j = i * 2; j < N; j += i) {
         isPrime[j] = 0;
         hi[j]=i;
