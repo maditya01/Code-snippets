@@ -9,3 +9,10 @@ for(int i=1;i*i<=N;i++){
    }
  }
 }
+
+//Multiples me iterate karna 
+for(int i=2;i<N;i++){ 
+for(int j=i;j<N;j+=i){
+//Divisor of j is i.
+} 
+}
