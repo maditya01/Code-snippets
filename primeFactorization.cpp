@@ -14,5 +14,12 @@ if(n>1){
 }
 
 //O(log(N))->using seive
-
-
+// First Find highest prime or lowest prime of by which given number is Divisible
+// using seive algo
+while(N>1){
+ x=hp[N];//Highest prime factor of N
+ while(N%x==0){
+    N=N/x;
+  pf.push_back(x);
+ }
+}
