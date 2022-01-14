@@ -1,7 +1,7 @@
 //Usual Meanings of all DS
-bool checkDirectedCycle(int source){
-global_vis[source]=true;
-local_vis[source]=true;
+bool checkDirectedCycle(int u){
+global_vis[u]=true;
+local_vis[u]=true;
  for(auto v:adj[u]){
  if(!global_vis[v]){   
    if(checkDirectedCycle(v)){
