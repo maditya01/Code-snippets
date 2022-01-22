@@ -8,5 +8,7 @@ What is the Transition from one DP state to another
 dp[i]=dp[i-x]+something like that dp[i][j]= dp[i-1][j]+ dp[i-1][j-nums[i-1]] something like that
 
 
-what is the answer of smallest DP state which you can directly tell  like dp[0]=something dp[n] =something dp[0][0]=something 
-One question comes when you write Iterative DP where you have to start-> then your smallest DP state would be helpFull.
+//what is the answer of smallest DP state which you can directly tell  like dp[0]=something dp[n] =something dp[0][0]=something 
+
+
+//One question comes when you write Iterative DP where you have to start-> then your smallest DP state would be helpFull.
