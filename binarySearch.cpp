@@ -14,7 +14,7 @@ int mid= lo+(hi-lo)/2;
     ans=mid;
  }else{
   //Update hi,lo according to questions  
- //Minimum poocha hai -> lo=mid-1
+ //Minimum poocha hai -> lo=mid+1
  //Maximum Poocha hai-> hi=mid-1 
   
 }
