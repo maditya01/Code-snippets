@@ -1,5 +1,4 @@
-vector<int> segTree;
-
+vector<int> segTree;//structure of segment tree what is stored in each Node
 
 //initialise the segment Tree.
 void generalSegConstruct(vector<int> &arr) {
