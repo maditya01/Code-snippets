@@ -16,3 +16,9 @@ void update(int idx, int value) {
 		idx += (idx) & (-idx);
 	}
 }
+
+void build(vector<int> &nums) {
+	for (int i = 1; i <= n; i++) {
+		update(i, nums[i - 1]);
+	}
+}
