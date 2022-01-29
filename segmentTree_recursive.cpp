@@ -43,6 +43,7 @@ int query(int l, int r, int start, int end, int pos) {
 
 //UPDATE OPERATION
 // update(1,0,n-1,pos,new_val)
+//pos is a index where we have to update 
 void update(int ind, int start, int end, int pos, int new_val) {
 	//Leaf Node
 	if (start == end) {
