@@ -22,6 +22,9 @@ void build(vector<int> &nums, int node, int start, int end) {
 // our range got partially overlap with node range[1, 4] or [3, 6];-> aur depth me jayenge
 // our range does not overlap with that node[0, 1] or [6, 6] -> infinite return karenga
 
+//l---r is a range where we have to query
+//start----end is a range of current node we have to compare
+//with l---r range
 int query(int l, int r, int start, int end, int node) {
 //node ke range kaise nikalenge
 
