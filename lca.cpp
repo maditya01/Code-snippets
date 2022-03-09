@@ -6,10 +6,12 @@ void dfs(int u, int p = -1) {
 	for (int v : adj[u]) {
 		if (v == p) continue;
 		depth[v] = depth[u] + 1;
-		up[v][0] = u;
+		up[v][0] = u;//First Ancestor is Parent
+		//First Ancestor,Second Ancestor,4th Ancestor,8thAncestor,16th Ancestor,32th Ancestor and so on.
 		for (int j = 1; j < LOG; j++) {
-			int f = up[v][j - 1];
-			int s = j - 1;
+			//vertex v ka [2^jth] Ancestor:
+			int f = up[v][j - 1];//2^(j-1)th Ancestor
+			int s = j - 1;//uska j-1th Ancestor
 			if(f!=-1){
 			up[v][j] = up[f][s];
 			}
@@ -17,10 +19,10 @@ void dfs(int u, int p = -1) {
 		dfs(v, u);
 	}
 }
+
 int getKthAncestor(int node, int k) {
 	if (depth[node] < k) return -1;
 	for (int j = 0; j < 18; j++) {
-		cout << k>>j;
 		if (1 & (k >> j)) {
 			node = up[node][j];
 		}
@@ -28,8 +30,8 @@ int getKthAncestor(int node, int k) {
 	return node;
 }
 int LCA(int x, int y) {
-	if (depth[x] < depth[y]) swap(x, y);
 	//i am assuming node x at higher depth.
+	if (depth[x] < depth[y]) swap(x, y);	
 	//1.bring node x to the level of node y.
 	int k = depth[x] - depth[y];
 	//x ko k ancestor upar karna hai.
