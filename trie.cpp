@@ -20,15 +20,19 @@ struct TrieNode *getNode(void) {
 	}
 	return pNode;
 }
+//Given String me Traverse karo
 void insert(struct TrieNode *root, string key) {
 
 	struct TrieNode *curr_node = root;
 
 	for (int i = 0; i < key.length(); i++) {
 		int index = key[i] - 'a';
+		
 		if (curr_node->children[index] == NULL) {
+			//create New Node for key[i] character.
 			curr_node->children[index] = getNode();
 		}
+		//Go on More Depth
 		curr_node = curr_node->children[index];
 	}
 	// mark last node as leaf
