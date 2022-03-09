@@ -15,7 +15,7 @@ return_type recursive_DP(input arguments){
 
 //Find out all The choices
 i) 2 choices take or not_take
-ii) n choices use For loop
+ii) n choices use For loop always return outside the for loop
 
 return [stored in dp] = best Posible answer from these Choices.
 }
