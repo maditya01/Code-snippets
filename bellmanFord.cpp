@@ -14,6 +14,7 @@ void bellmanFord(int source) {
 				if (dis[v] > dis[u] + wt) {
 					//Why we are comparing with -INF because
 					//distance can be -ve can be cross overflow
+					//dis[v]=dis[u]+wt we can write this for avoiding -ve overflow we are writing like this
 					dis[v] = max(-INF, dis[u] + wt);
 					parent[v] = u;
 					x = v;
