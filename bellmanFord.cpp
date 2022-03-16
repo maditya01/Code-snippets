@@ -1,6 +1,7 @@
 //Variables have their usual Meaning
 //Edges is a vector of vector
 //dis,par is a V size vector
+// https://media.geeksforgeeks.org/wp-content/uploads/bellmanford1.png-> TAKE THIS AS AN EXAMPLE.
 void bellmanFord(int source) {
 	int x;
 	for (int i = 0; i < V; i++) {
