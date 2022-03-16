@@ -4,6 +4,10 @@
 // https://media.geeksforgeeks.org/wp-content/uploads/bellmanford1.png-> TAKE THIS AS AN EXAMPLE.
 void bellmanFord(int source) {
 	int x;
+     // Step 2: Relax all edges |V| - 1 times. A simple
+    // shortest path from src to any other vertex can have
+    // at-most |V| - 1 edges
+    //We are Relaxing |V| times for checking -ve Cycle Edges.
 	for (int i = 0; i < V; i++) {
 		x = -1;
 		for (int j = 0; j < E; j++) {
