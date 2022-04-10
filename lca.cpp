@@ -24,6 +24,8 @@ void dfs(int u, int p = -1) {
 int getKthAncestor(int node, int k) {
 	if (depth[node] < k) return -1;
 	for (int j = 0; j < 18; j++) {
+		// update nodes at  only where set bits are present
+		// k=5th ancestor chahiye 00101  2^0+2^2 
 		if (1 & (k >> j)) {
 			node = up[node][j];
 		}
@@ -45,5 +47,6 @@ int LCA(int x, int y) {
 			y = up[y][j];
 		}
 	}
+	//we are returning parent of x. as LCA.
 	return up[x][0];
 }
