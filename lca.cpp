@@ -9,9 +9,10 @@ void dfs(int u, int p = -1) {
 		up[v][0] = u;//First Ancestor is Parent
 		//First Ancestor,Second Ancestor,4th Ancestor,8thAncestor,16th Ancestor,32th Ancestor and so on.
 		for (int j = 1; j < LOG; j++) {
-			//vertex v ka [2^jth] Ancestor:
-			int f = up[v][j - 1];//2^(j-1)th Ancestor
-			int s = j - 1;//uska j-1th Ancestor
+			// vertex v ka [2^jth] Ancestor:
+			// 2^j= 2^(j-1) + 2^(j-1) this is the main concept involved
+			int f = up[v][j - 1]; //2^(j-1)th Ancestor
+			int s = j - 1; //f ka 2^(j-1)th Ancestor
 			if(f!=-1){
 			up[v][j] = up[f][s];
 			}
