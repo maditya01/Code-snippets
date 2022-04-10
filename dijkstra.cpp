@@ -5,14 +5,17 @@
 //Take a graph and visualise this algo at every step.
 
 // After Applying dijks what you will get
-//Now you have a distance array which has distance from source to ith vertex ->
+//Now you have a distance array which has a minimum  distance from source to ith vertex ->
 // graph 1 based hai ya 0 based  usi ke according distance array hai
 //if 1 based size(N+1) 0 based hai Size N hoga
 
 //distance is an array . where index represents vertex and value represents min distance from source vertex.
+//distance can be 1-d Array can be 2-d Array.
+
+
 void shortestPath(int source){
-     dis[source]=0;//source has distance 0 from source itself
-     ms.insert({0,source});//insert that thing in ms
+     dis[source]=0;       //source has distance 0 from source itself
+     ms.insert({0,source});  //insert that thing in ms
      while(!ms.empty()){
          int d=ms.begin()->first;//MINIMUM DISTANCE
          int u=ms.begin()->second;//Try to get a vertex which has a Minimum Distance-> GREEDY APPROACH
