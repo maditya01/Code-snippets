@@ -26,8 +26,9 @@ int getKthAncestor(int node, int k) {
 	for (int j = 0; j < 18; j++) {
 		// update nodes at  only where set bits are present
 		// k=5th ancestor chahiye 00101  2^0+2^2 
-		if (1 & (k >> j)) {
-			node = up[node][j];
+ 		// k me jth bit set hai ya nhi
+		if (k & (1 << j)) {
+		    node = up[node][j];
 		}
 	}
 	return node;
