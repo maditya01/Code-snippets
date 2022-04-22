@@ -38,7 +38,7 @@ int LCA(int x, int y) {
 	//1.bring node x to the level of node y.
 	int k = depth[x] - depth[y];
 	//x ko k ancestor upar karna hai.
-	x=getKthAncestor(x,k)
+	x=getKthAncestor(x,k);
 	if (x == y) return x;
 	//Now both x and y are at the same level or depth bol sakte ho
 	for (int j = LOG - 1; j >= 0; j--) {
