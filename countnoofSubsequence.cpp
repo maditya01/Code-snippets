@@ -4,7 +4,9 @@
 
 
 //length = 1 is your base case. for all index.
-
+for(int i=0;i<n;i++){
+//Length 1 
+}
 for(int i=1;i<n;i++){
  
   for(int len=2;len<=k;len++){
