@@ -2,6 +2,7 @@
 
 //subsequence ends at ith index ka concept lagega.
 
+// dp[i][j]=dp[i-1][j-1]+dp[i-2][j-1]+dp[i-3][j-1]+dp[i-4][j-1]......
 
 //length = 1 is your base case. for all index.
 for(int i=0;i<n;i++){
