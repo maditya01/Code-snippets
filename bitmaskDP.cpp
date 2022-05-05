@@ -1,5 +1,7 @@
 // ONE TO ONE CHOICES +  Factorial Type Condition banne Chahiye.
 
+// mask represents what elements you have taken what not taken ->    011001011 0th you have not taken 1st you have taken 2nd you have taken 3rd you don't and so on. 
+
 // dp(i,mask)-> Typical DP State
 
 
