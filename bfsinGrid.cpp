@@ -22,17 +22,19 @@ int dy[]={0,0,1,-1}
   
   while(!q.empty()){
    // take front values.
+    //check with dp value 
+             if(dp[x][y]==INT_MAX) dp[x][y]=0;
     //q.pop();
  //4 direction movement.
 for(int i=0;i<4;i++){
     int newX=x+dx[i];
     int newY=y+dy[i];
+  //write all valid condition in one if condition.
    if(check validity of this index newX>=0 and newX<n and newY>=0 and newY<n and !blockedCells and !visitedCells ....){
     //push values in queue with due respect condition.
         q.push({newX,newY});
      // update your matrix here.
         vis[newX][newY]=true;
-
    }
  }  
   } 
