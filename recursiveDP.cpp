@@ -12,6 +12,7 @@ return_type recursive_DP(input arguments){
 
 //DP condition Check
 
+ //For each Choice sometimes initialisation is required like counting problem , max and min problem each has different initialisation.
 
 //Find out all The choices
 i) 2 choices take or not_take
