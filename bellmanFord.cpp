@@ -8,6 +8,9 @@ void bellmanFord(int source) {
     // shortest path from src to any other vertex can have
     // at-most |V| - 1 edges
     //We are Relaxing |V| times for checking -ve Cycle Edges.
+	//src can be any thing
+	//take all the edges and do relaxation in any order.
+	dis[src]=0;
 	for (int i = 0; i < V; i++) {
 		x = -1;
 		for (int j = 0; j < E; j++) {
