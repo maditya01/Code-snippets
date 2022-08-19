@@ -24,6 +24,6 @@ int func(int i, int mask, int n) {
 			ans = min(ans, cost[i][j] + func(i + 1, mask ^ (1 << j), n));
 		}
 	}
-	ans=min(ans,func(i+1,mask,n)//Not assigning any work at ith position.
+	ans = min(ans,func(i+1,mask,n))//Not assigning any work at ith position.
 	return dp[i][mask] = ans;
 }
